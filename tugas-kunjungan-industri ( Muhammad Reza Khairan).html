@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+    background-color: black;
+    }  
+    
+    @font-face{
+    font-family: judul;
+    src: url(DeliciousHandrawn-Regular.ttf);
+    }
+
+    .judul{
+    font-family: "judul";
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(116, 116, 209);
+    background-color: rgb(54, 52, 52);
+    height: 90px;
+    margin: 0;
+    padding-top: 30px;
+    border-bottom: plum groove 10px;
+    }
+
+    .opening{
+    background-image: url(bgopening.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    border-top: rgb(138, 138, 241) ridge 6px;
+    border-bottom: rgb(138, 138, 241) ridge 6px;
+    }
+
+    .opening img{
+    float: right;
+    width: 668px;
+    border-left: 7px ridge #00ffe5;
+    }
+
+    .pendahuluan{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: powderblue;
+    padding-left: 27px;
+    }
+
+    .pc{
+    color: rgb(158, 39, 158);
+    text-decoration: none;
+    }
+
+    .pc:hover{
+    color: rgb(218, 87, 218);
+    background-color: rgb(158, 39, 158);
+    border-radius: 10px;
+    padding: 3px 2px;
+    transition: 0.4s;
+    }
+
+    .unikom{
+    color: rgb(42, 42, 179);
+    text-decoration: none;
+    }
+
+    .unikom:hover{
+    color: rgb(93, 93, 234);
+    background-color: rgb(42, 42, 179);
+    border-radius: 10px;
+    padding: 3px 2px;
+    transition: 0.4s;
+    }
+
+    .cerita{
+    font-size: 17px;
+    } 
+
+    .p1{
+    background-color: rgba(128, 128, 128, 0.454);
+    height: 320px;
+    padding-top: 10px;
+    border-top: yellow solid 5px;
+    border-bottom: yellow solid 5px;
+    }
+
+    .p1 img{
+    float: right;
+    border-radius: 20px;
+    border: rgb(244, 255, 88) solid 3px;
+    }
+
+    .p1 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(244, 255, 88);
+    padding-top: 90px;
+    text-indent: 15px;
+    }
+
+    .p2{
+    background-color: rgb(81, 78, 78);
+    height: 320px;
+    padding-top: 15px;
+    border-top: orange solid 5px;
+    border-bottom: orange solid 5px;
+    }
+
+    .p2 img{
+    float: left;
+    border-radius: 20px;
+    border: rgb(255, 197, 90) solid 3px;
+    }
+
+    .p2 p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 210, 127);
+    padding-top: 115px;
+    text-indent: 15px;
+    }
+
+    .p3{
+    background-color: rgba(128, 128, 128, 0.58);
+    height: 320px;
+    padding-top: 10px;
+    border-top: palegoldenrod solid 5px;
+    border-bottom: palegoldenrod solid 5px;
+    }
+
+    .p3 img{
+    float: right;
+    border-radius: 20px;
+    border: palegoldenrod solid 3px;
+    }
+
+    .p3 p{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: palegoldenrod;
+    padding-top: 100px;
+    text-indent: 15px;
+    }
+
+    .p4 img{
+    float: left;
+    border-radius: 20px;
+    border: hotpink solid 3px;
+    }
+
+    .p4{
+    background-color: rgba(128, 128, 128, 0.235);
+    padding-top: 10px;
+    border-top: hotpink solid 5px;
+    border-bottom: hotpink solid 5px;
+    }
+
+    .p4 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 15px;
+    }
+
+    .p-first{
+    color: hotpink;
+    }
+
+    .p-second{
+    color: rgb(255, 57, 255);
+    }
+
+    .p-thirth{
+    color: rgb(251, 151, 201);
+    }
+
+    .p-fourth{
+    color: rgb(241, 176, 209);
+    }
+
+    .p-fifth{
+    color: rgb(231, 157, 194);
+    }
+
+    .p-sixth{
+    color: rgb(255, 105, 210);
+    }
+
+    .p4 ol{
+    list-style-position: inside;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: rgb(248, 149, 248);
+    }
+
+    .p5{
+    background-color: rgba(77, 69, 69, 0.235);
+    padding-top: 10px;
+    border-top: gainsboro solid 5px;
+    border-bottom: gainsboro solid 5px;
+    }
+
+    .p5 img{
+    float: right;
+    border-radius: 20px;
+    border: gainsboro solid 3px;
+    }
+
+    .p5 p{
+    font-family: cursive;
+    text-indent: 15px;
+    }
+
+    .p5 .p5-first{
+    color: gainsboro;
+    }
+
+    .p5 .p5-second{
+    color: rgb(255, 252, 252);
+    }
+
+    .p5 .p5-thirth{
+    color: rgb(255, 236, 236);
+    }
+
+    .p5 .p5-fourth{
+    color: rgba(255, 255, 255, 0.724);
+    }
+
+    .p5 ol{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(135, 135, 255);
+    }
+
+    .p6{
+    background-color: rgba(77, 69, 69, 0.235);
+    padding-top: 10px;
+    height: 318px;
+    border-top: sienna solid 5px;
+    border-bottom: sienna solid 5px;
+    }
+
+    .p6 img{
+    float: left;
+    border-radius: 20px;
+    border: sienna solid 3px;
+    }
+
+    .p6 p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(214, 146, 114);
+    font-style: italic;
+    text-indent: 15px;
+    padding-top: 70px;
+    }
+
+    .p7{
+    background-color: rgba(255, 255, 255, 0.829);
+    padding-top: 10px;
+    height: 318px;
+    border-top: rgb(181, 181, 2) solid 5px;
+    border-bottom: rgb(181, 181, 2) solid 5px;
+    }
+
+
+    .p7 img{
+    float: right;
+    border-radius: 20px;
+    border: olive solid 3px;
+    }
+
+    .p7 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 15px;
+    padding-top: 45px;
+    color: rgb(79, 79, 10);
+    font-size: 21px;
+    }
+
+    .p8{
+    background-color: rgba(210, 207, 207, 0.091);
+    padding-top: 10px;
+    height: 318px;
+    border-top: rosybrown solid 5px;
+    border-bottom: rosybrown solid 5px;
+    }
+
+    .p8 img{
+    float: left;
+    border-radius: 20px;
+    border: rosybrown solid 3px;
+    }
+
+    .p8 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: 15px;
+    padding-top: 130px;
+    color: rosybrown;
+    }
+
+    .p9{
+    background-color: rgba(135, 105, 105, 0.091);
+    padding-top: 10px;
+    height: 318px;
+    border-top: sandybrown solid 5px;
+    border-bottom: sandybrown solid 5px;
+    }
+
+    .p9 img{
+    float: right;
+    border-radius: 20px;
+    border: sandybrown solid 3px;
+    }
+
+    .p9 p{
+    font-family: sans-serif;
+    text-indent: 15px;
+    padding-top: 130px;
+    color: sandybrown;
+    }
+
+    .tamat{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(255, 180, 82);
+    font-size: 200px;
+    margin-bottom: 0;
+    letter-spacing: 40px;
+    background-color: rgb(254, 235, 209);
+    border-top: rgb(184, 155, 103) groove 10px;
+    }
+    </style>
+    <title>Kunjungan Industri</title>
+</head>
+<body>
+    
+    <h2 class="judul">MY STORY DURING INDUSTRIAL VISIT AND CAMPUS STUDIES IN BANDUNG</h2><br><br><br>
+
+    <div class="opening">
+        <img src="gambarbus.jpg" alt="Gambar Bus">
+        <p class="pendahuluan">Sebelum ke ceritanya, saya ingin kasih tahu dulu apa itu kunjungan industri dan studi kampus.<br>
+        Kunjungan industri atau disingkat KI adalah kegiatan rutin yang dilaksanakan sekolah setiap tahun termasuk juga di 
+        SMK Informatika Al-Irsyad Al-Islamiyyah Kota Cirebon. Kegiatan ini diadakan untuk menambah wawasan dan pengalaman serta 
+        membiasakan peserta didik belajar secara langsung mengenal tempat-tempat industri dan universitas dengan cara berinteraksi 
+        dengan lingkungan sekitar. Dan kegiatan ini diadakan pada hari selasa tanggal 14 januari 2025. Untuk KI-nya ke 
+        <a href="https://chlorinedigitalmedia.com/" class="pc" target="_blank">PT Chlorine</a> dan untuk studi kampunya ke 
+        <a href="https://www.unikom.ac.id/" class="unikom" target="_blank">UNIKOM</a>.
+        </p> 
+    </div><br><br><br><br><br><br>
+
+    <div class="cerita">
+
+        <div class="p1">
+            <img src="gambar1.jpg" alt="Gambarnya gelap pisan" width="400px">
+            <p>Saya datang ke SMK Al-Irsyad pada jam 04.00 kurang lebih dan menunggu shubuh di masjid. Pada jam 04.20 kurang lebih, 
+            adzan shubuh, lalu nunggu beberapa menit untuk siswa yg belum dateng. Setelah itu, sholat shubuh. Selesai sholat shubuh, 
+            kami pun ngumpul di depan ruang piket untuk dikasih arahan dan juga ada pengecekan tas" siswa barangkali ada yg membawa 
+            barang terlarang. Setelah pengecekan, kami naik bus dan di bus kami dikasih keripik yg mereknya VIP CHIPS.
+            </p>
+        </div><br><br><br><br><br>
+
+        <div class="p2">
+            <img src="gambar2.jpg" alt="Perjalanan pergi" width="400px">
+            <p>Pada jam 05.00 kurang lebih, kami pergi ke bandung. Selama perjalanan, saya tidak banyak melakukan apa". Hanya makan VIP CHIPS, 
+            melamun, melihat pemandangan dan mendengar lagu religi yg diputar sama si supir.
+            </p>
+        </div><br><br><br><br><br>
+
+        <div class="p3">
+            <img src="gambar3.jpg" alt="Rest area" width="400px">
+            <p>Kami pun sampai di rest area pada jam 07.30 kurang lebih. Disana, kami sarapan dengan nasi daun, ayam goreng, tempe, tahu goreng 
+            lalapan, sambal dan kerupuk. Setelah semuanya sudah sarapan, kami pun melanjutkan perjalanan lagi. 
+            </p>
+        </div><br><br><br><br><br>
+
+        <div class="p4">
+            <img src="gambar4.jpg" alt="PT Chlorine" width="400px">
+            <p class="p-first">And finally, kami sampai di PT Chlorine pada jam 09.00 kurang lebih. Setelah itu, kami turun dari bus lalu ke aula yg 
+            berada dilantai 4. Setelah nunggu bentar, yg membawakan acaranya telah datang, namanya Adam Setia Nugraha atau dipanggil 
+            kang Adam. Saya lupa nama pekerjaan yg diambil kang Adam, tapi untuk definisinya saya masih inget. Bahasa kasarnya sih adalah
+            bosnya kameramen. Klo tidak salah tugasnya mengatur kamera dan sinematografi.</p> 
+            <p class="p-second">Setelah itu, kang Adam ngasih tahu perbedaan industri kreatif dan industri konvensional. Berikut adalah perbedaannya 
+            ( seinget saya ) :</p>
+            <ol>
+            Industri konvensional
+                <li>Mengutamakan action daripada rencana</li>
+                <li>Di industri ini, melakukan kesalahan akan di kasih SP</li>
+                <li>Kerjanya cuma bisa di kantor</li>
+            </ol>
+
+            <ol>
+            Industri kreatif
+                <li>Mengutamakan rencana daripada action</li>
+                <li>Di industri film, melakukan kesalahan akan langsung dipecat</li>
+                <li>Kerjanya bisa dimana saja</li>
+            </ol>
+
+            <p class="p-thirth">Setelah itu, kang Adam ngasih tahu klo malu itu menghalangi kemajuan dan kreatifitas kita. Jadi, org yg bekerja di industri 
+            kreatif, harus berani menyampaikan kreatifitasnya. Klo tidak berani, berarti tidak cocok berkerja di industri kreatif.Setelah 
+            itu, kang Adam menyuruh kami untuk berkreatifitas, yaitu membuat suatu teknologi untuk militer lalu ditulis di kertas.</p>
+            
+            <p class="p-fourth">Entah dimulainya jam berapa, ditengah-tengah acara setiap jurusan akan gantian ke studio. Yg pertama, jurusan DKV dulu. 
+            Setelah beberapa menit, jurusan RPL selanjutnya. Untuk studionya sih klo tak salah ada di lantai 2. Di studionya kami 
+            dijelasin apa itu kacamata VR dan macam mereknya. Untuk mereknya ada Apple Vision Pro dan Meta Quest. Tapi di PT Chlorine 
+            punyanya Meta Quest. Setelah itu, mbak yg ngejelasin tentang VR nawarin siapa yg mau coba. Untuk yg pertama coba adalah saya.
+            setelah saya pakai kacamata VRnya, mbaknya minta saya untuk jelasin apa yg saya lihat. Yg saya lihat, saya ada di sebuah rumah
+            yg didalamnya ada ruang makan, cermin, perapian, ruang tamu dan di atas saya ada sebuah pohon sakura. Setelah itu, nyoba salah 
+            satu game. Gamenya itu cara mainnya kita harus mukul sebuah balok yg menuju kita agar menghasilkan sebuah irama musik. 
+            Cara main game dengan VR adalah kita harus pakai kontroler yg namanya saya tak tahu. Setelah selesai nyobain, selanjutnya 
+            Ihsan lalu Elang. Setelah Elang selesai nyobain VRnya, kami bertiga dikasih hadiah snack. Sebelum kami bertiga pergi ke aula
+            lagi, kami diminta untuk ngejelasin gimana rasanya pakai VR. Setelah jurusan RPL, selanjutnya jurusan TKJ.</p>
+
+            <p class="p-fifth">Di aula, saya tak tahu ada game apaan. Setelah gamenya selesai dan jurusan TKJ kembali ke aula, kang Adam nyuruh kami untuk 
+            ngeberesin dulu meja" di aula. Setelah beres, di game selanjutnya kami harus suit dulu dengan teman, yg menang ikut gamenya, 
+            yg kalah nonton doang. Untuk cara main gamenya saya bener" lupa karna saya tak terlalu memperhatikan. Yg menang akan dapat
+            hadiah. Untuk hadiahnya saya tak tahu karna hadiahnya dibungkus.</p>
+
+            <p class="p-sixth">Setelah gamenya selesai, kami makan siang dengan nasi putih, ayam panggang, telur, tahu goreng dan 
+            air mineral 600 ml. Setelah makan siang, kami keluar dari PT Chlorine lalu sebelum pergi ke UNIKOM, kami foto".</p> 
+        </div><br><br><br><br><br>
+
+        <div class="p5">
+            <img src="gambar5.jpg" alt="UNIKOM" width="500px">
+            <p class="p5-first">Entah pada jam berapa, kami pun sampai di UNIKOM. Setelah itu, kami diarahkan ke ruangan L.018.</p>
+
+            <p class="p5-second">Setelah semuanya duduk, acaranya dimulai dengan pembukaan oleh MC KPM UNIKOM. Lalu menyanyikan lagu kebangsaan 
+            indonesia raya dan mars UNIKOM. Lalu menonton video tentang UNIKOM dan kerennya pakai bahasa inggris cuy.
+            Lalu sambutan dari direktur humas dan protokoler. Lalu sambutan dari kepala sekolah SMK Al-Irsyad, Bu Sri Wahyuni.
+            Lalu ada pemaparan dari direktur PMB UNIKOM. Lalu pemaparan dari ketua program studi teknik informatika. Lalu pemaparan
+            dari ketua program studi sistem informasi. Lalu sesi tanya jawab. Lalu penyerahan cinderamata dari SMK Al-Irsyad ke UNIKOM
+            dan dari UNIKOM ke SMK Al-Irsyad. Lalu acaranya pun ditutup. Setelah acaranya ditutup, ada sesi foto untuk siswa" dan guru"
+            SMK Al-Irsyad. 
+            </p>
+
+            <p class="p5-thirth">Oh iya, saya baru inget, di sesi bagian mana, dikasih tahu tips memilih perguruan tinggi. Berikut tipsnya :</p>
+                <ol>
+                    <li>Hobi</li>
+                    <li>Beasiswa</li>
+                    <li>Akreditasi</li>
+                    <li>Pekerjaan</li>
+                    <li>Prestasi</li>
+                    <li>Keunikan</li>
+                </ol>
+
+            <p class="p5-fourth">Setelah acaranya selesai, kami diarahkan ke mushola yg terletak di dalam perpustakaan untuk melakukan 
+            sholat jamak takhir. Setelah semuanya melakukan sholat jamak takhir, kami pergi ke lobby. Sambil menunggu busnya dateng, ada 
+            sesi foto lagi. Setelah busnya dateng kami pun pergi ke cihampelas walk atau disingkat ciwalk.
+            </p>
+        </div><br><br><br><br><br>
+
+        <div class="p6">
+            <img src="gambar6.jpg" alt="Cihampelas Walk" width="400px">
+            <p>Kami sampai di ciwalk pada jam setengah 5 kurang lebih. Ternyata lokasinya berdekatan dengan PT Chlorine, alias
+            kami kembali ke tempat semula. Kemudian kami ganti baju kami dengan kaos KI dan studi kampus. Setelah itu, kami bebas ngapain
+            aja dan beli apa aja. Untuk saya, tak membeli apa", karna Ummi saya ngelarang saya menggunakan uangnya untuk beli apa", kecuali
+            dalam keadaan urgent. Jadi, di ciwalk saya hanya keliling" sama Daffi dan melihat-lihat tempatnya dan barang" yg 
+            dijual disana. Pada jam setengah 6 lebih, sebelum kami pergi ke rumah makan bale gazeboe, ada seorang pengamen yg minta
+            donasi agar anaknya bisa sekolah dan juga nyanyi lagu dengan gitar. Setelah itu, kami pun pergi ke rumah makan bale gazeeboe.
+            </p>
+        </div><br><br><br><br><br>
+
+        <div class="p7">
+            <img src="gambar7.jpg" alt="Rumah Makan Bale Gazeeboe" width="400px">
+            <p class="7-first">Pada jam 6 kurang lebih kita sampai di rumah makan bale gazeeboe. Kita makan malem dengan nasi putih, ayam goreng,
+            tahu goreng, sop sayur bening, sambal, kerupuk dan air mineral. Yg sudah makan malem, sholat di mushola yg terletak di dalem
+            rumah makan bale gazeeboe. Untuk sholatnya di jamak taqdim dan juga karna musholanya kecil, musholanya hanya digunakan untuk 
+            siswa dan ada kloternya. Untuk siswi dan guru saya tak tahu dimana. Setelah semuanya sudah makan dan sholat, kami pun 
+            bersiap-siap pulang ke cirebon.
+            </p>
+        </div><br><br><br><br><br>
+
+        <div class="p8">
+            <img src="gambar8.jpg" alt="Perjalanan pulang" width="400px">
+            <p>Pada jam 7 lebih, kami OTW ke cirebon. Selama perjalanan, kegiatan saya hanya tidur, melamun, melihat
+            pemandangan, dan main HP.
+            </p>
+        </div><br><br><br><br><br>
+
+        <div class="p9">
+            <img src="gambar9.jpg" alt="Nyampe juga di cirebon" width="400px">
+            <p>Pada jam 9 lebih, akhirnya kami pun sampai di SMK Al-Irsyad dan dibalik gerbang, Ummi saya sudah jemput dan
+            saya pun pulang ke rumah.
+            </p>
+        </div>
+
+        <p class="tamat">TAMAT</p>
+
+    </div>
+
+</body>
+</html>
